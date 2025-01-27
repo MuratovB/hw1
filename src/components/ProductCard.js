@@ -13,7 +13,7 @@ const ProductCard = ({ title, price, category, image }) => {
       <img className="product-img" src={image} alt={title} />
       <p className="text-align-left" style={{color: "#4169E1", fontSize: "14px"}}>{capitalizeCategory(category)}</p>
       <p className="text-align-left" style={{fontSize: "18px"}}><b>{title}</b></p>
-      <p style={{fontSize: "24px"}}><b>${price}</b></p>
+      <p className="text-align-left" style={{fontSize: "24px"}}><b>${price}</b></p>
     </div>
   );
 };
